@@ -1,7 +1,7 @@
 ===============================================================================
 ===     Spring PetClinic sample application - PostgreSQL Configuration     ===
 ===============================================================================
-
+ENTRYPOINT [ "java", "-Dspring.profiles.active=postgres", "org.springframework.boot.loader.launch.JarLauncher" ]
 --------------------------------------------------------------------------------
 
 1) Run the "docker-compose.yml" from the root of the project:
