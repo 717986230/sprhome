@@ -34,7 +34,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 class VetController {
-
+//测试推送2
 	private final VetRepository vetRepository;
 
 
@@ -49,7 +49,6 @@ class VetController {
 		Vets vets = new Vets();
 		Page<Vet> paginated = findPaginated(page);
 		vets.getVetList().addAll(paginated.toList());
-
 		return addPaginationModel(page, paginated, model);
 	}
 
